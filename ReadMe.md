@@ -6,3 +6,5 @@ Create-A-README is a readme generator that allows the user to input a license an
 
 To install, pull from <a href="https://github.com/ward438/Make_A_ReadMe">My repo</a> , run npm init, npm i. Call node index.js and follow the onscreen prompts.
 
+<img src="https://github.com/ward438/Make_A_ReadMe/blob/main/menu1.PNG" alt="Preview"
+width="1000px"/>
