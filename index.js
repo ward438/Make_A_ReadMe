@@ -4,17 +4,14 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 const colors = require('colors');
-// const { userInfo } = require('os');
-
 const questions = [
     quest0 = 'Enter title of README: ',
     quest1 = 'Enter description of application or code: ',
     quest2 = 'Enter installation instructions: ',
 ];
 
-
 function toc() {
-    readline.question('Select from the following:\r\n0: licensing,'.yellow + '\r\n' + "1: Header input".blue + '\r\n' + '2: Description'.green + '\r\n' + '3: Installation instructions'.red + "\r\n" + '4: Exit', toc => {
+    readline.question('Select from the following:\r\n0: licensing '.yellow + '\r\n' + "1: Header input ".blue + '\r\n' + '2: Description '.green + '\r\n' + '3: Installation instructions '.red + "\r\n" + '4: Exit ', toc => {
 
         let elem;
         switch (toc) {
@@ -58,21 +55,21 @@ function toc() {
             let elem;
             switch (usage) {
                 case '0':
-                    elem = fs.appendFile('ReadMe.md', `${licenses[0]}` + "\r\n" + "\r\n", (err) => {
+                    elem = fs.appendFile(`ReadMe.md`, `${licenses[0]}` + "\r\n" + "\r\n", (err) => {
                         if (err)
                             throw err;
                         toc();
                     })
                     break;
                 case '1':
-                    elem = fs.appendFile('ReadMe.md', `${licenses[1]}` + "\r\n" + "\r\n", (err) => {
+                    elem = fs.appendFile(`ReadMe.md`, `${licenses[1]}` + "\r\n" + "\r\n", (err) => {
                         if (err)
                             throw err;
                         toc();
                     })
                     break;
                 case '2':
-                    elem = fs.appendFile('ReadMe.md', `${licenses[2]}` + "\r\n" + "\r\n", (err) => {
+                    elem = fs.appendFile(`ReadMe.md`, `${licenses[2]}` + "\r\n" + "\r\n", (err) => {
                         if (err)
                             throw err;
                         toc();
@@ -121,10 +118,9 @@ function toc() {
 
     let closing = function closing() {
         readline.question('ReadMe complete!'.yellow, closing => {
-            console.log('README Complete!');
+
         })
         readline.close();
     }
-
 }
 toc();
