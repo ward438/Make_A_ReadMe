@@ -1,8 +1,8 @@
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Title
+# This is the Tile of README
 
-dfkjdfkgjdfkgdfkl
+The README generator is a fantastic tool to automate the process of describing your product.
 
-dfgdfgdfg
+Install index.js and perform a npm -i to bring in the required packages to run the program.
 
