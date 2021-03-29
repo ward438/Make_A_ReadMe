@@ -12,9 +12,11 @@ const questions = [
 
 let usage = function usage() {
     const licenses = [
-        l1 = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+        l1 = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+        l2 = '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
+        l3 = '[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)',
     ];
-    readline.question('0 = Limited Usage: '.red + "\r\n" + '1 = Restricted Usage: '.green + "\r\n" + '2 = Unrestricted Usage: '.blue, usage => {
+    readline.question('Select license badge:\r\n0 = Apache License, Version 2.0: '.red + "\r\n" + '1 = Boost Software License 1.0 : '.green + "\r\n" + '2 = Creative Commons: '.blue, usage => {
         let elem;
         switch (usage) {
             case '0':
@@ -40,13 +42,9 @@ let usage = function usage() {
                 break;
             default:
                 header();
-
-
-
         }
     });
 };
-
 
 let header = function header() {
     const hash = "# ";
@@ -83,15 +81,11 @@ let instructions = function instructions() {
     })
 };
 
-
-
-
 let closing = function closing() {
     readline.question('ReadMe complete!'.yellow, closing => {
         console.log('README Complete!');
     })
     readline.close();
 }
-
 
 usage();

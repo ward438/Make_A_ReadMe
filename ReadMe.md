@@ -1,7 +1,7 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+1
 
-# Test Sample Title
+# README Generator
 
-This is a functionality test
+This is a readme generator that is awesome sauce.
 
-follow the instructions at my github rep.
+Follow instructions via gitgun repo.
