@@ -27,14 +27,14 @@ let usage = function usage() {
                 })
                 break;
             case '1':
-                elem = fs.appendFile('ReadMe.md', `${usage}` + "\r\n" + "\r\n", (err) => {
+                elem = fs.appendFile('ReadMe.md', `${licenses[1]}` + "\r\n" + "\r\n", (err) => {
                     if (err)
                         throw err;
                     header();
                 })
                 break;
             case '2':
-                elem = fs.appendFile('ReadMe.md', `${usage}` + "\r\n" + "\r\n", (err) => {
+                elem = fs.appendFile('ReadMe.md', `${licenses[2]}` + "\r\n" + "\r\n", (err) => {
                     if (err)
                         throw err;
                     header();
